@@ -32,6 +32,7 @@
                 <div class="row">
                     <button id="kaygb-blog" class="btn btn-primary col-lg-4">BLOG</button>
                     <a href="//www.gee.ac.cn" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">BLOG</a>
+                    <button id="kaygb-github" class="btn btn-secondary col-lg-4">GitHub</button>
                     <a href="https://github.com/ilaomianyang" target="_blank" class="btn btn-secondary col-lg-4">GitHub</a>
                     <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=ilaomianyang@outlook.com" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">Send a Mail</a>
                     <button id="kaygb-mail" class="btn btn-success col-lg-4">Send a Mail</button>
@@ -84,6 +85,17 @@
                 maxmin: true, //开启最大化最小化按钮
                 area: ['80%', '100%'],
                 content: '//www.gee.ac.cn/'
+            });
+        });
+        $('#kaygb-github').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '老绵羊',
+                shadeClose: true,
+                shade: false,
+                maxmin: true, //开启最大化最小化按钮
+                area: ['80%', '100%'],
+                content: 'https://github.com/ilaomianyang'
             });
         });
         $('#kaygb-mail').on('click', function() {
